@@ -1,0 +1,6 @@
+1) Diagonals of a square matrix is :
+   for left to right diagonal : condition is row = column
+   for right to left diagonal : condition is row = total_no_of_rows - column - 1
+
+2) x = 2
+   x.toPrecision(2) //gives 2.00
