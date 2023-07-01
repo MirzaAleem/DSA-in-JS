@@ -15,4 +15,3 @@ for(let i = 0; i < arr.length; i++) {
 
 console.log("This is 2D array : ");
 console.log(arr);
-

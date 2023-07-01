@@ -1,0 +1,35 @@
+Example 1-
+
+int list_Sum(int A[], int n)
+{
+	int sum = 0;                // cost=1 no of times=1
+	for(int i=0; i<n; i++)      // cost=2 no of times=n+1 (+1 for the end false condition)
+		sum = sum + A[i] ;	    // cost=2 no of times=n
+	return sum ;			    // cost=1 no of times=1
+}
+
+Tsum = 1 + 2 * (n+1) + 2 * n + 1 
+     = 4n + 4                   // It's a polynomial equation with highest degree of n as 1
+     = C1 * n + C2 
+     = O(n)                     // Since highest degree of n is 1
+
+
+Example 2-
+
+let n = 3;												// cost=1 no of times=1
+let m = 3;                                              // cost=1 no of times=1
+let arr = [[3, 2, 7], [2, 6, 8], [5, 1, 9]];			// cost=1 no of times=1
+let sum = 0;											// cost=1 no of times=1
+
+for (let i = 0; i < n; i++) {							// no of times= n+1 (+1 for the end false condition)
+	
+	for (let j = 0; j < m; j++) {						// no of times= n * (n+1) (+1 for the end false condition)
+
+		sum += arr[i][j];								// no of times= n
+	}
+}
+console.log(sum);
+
+Tsum = 1 + 1 + 1 + 1 + (n+1) + n * (n+1) + n
+     = n^2 + 3n + 5                  // It's a polynomial equation with highest degree of n as 2
+     = O(n^2)                     // Since highest degree of n is 2
