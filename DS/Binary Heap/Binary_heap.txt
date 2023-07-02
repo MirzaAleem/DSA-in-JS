@@ -1,0 +1,18 @@
+A binary heap is a complete binary tree,
+which means all levels of the tree are fully filled except possibly the last level,
+which is filled from left to right. In a binary heap, each node has a key (or value) associated with it,
+and the key of a parent node is either greater than or equal to (in a max heap) 
+or less than or equal to (in a min heap)the keys of its children.
+
+There are two types of binary heaps:
+
+1) Max Heap: In a max heap, the key of each parent node is greater than or equal to the keys of its children. 
+   Therefore, the maximum element is always at the root of the heap.
+2) Min Heap: In a min heap, the key of each parent node is less than or equal to the keys of its children. 
+   Therefore, the minimum element is always at the root of the heap.
+
+Binary heaps can be implemented using arrays. 
+The binary tree structure can be represented by storing the elements of the heap in an array, 
+where the left child of a node at index i is located at index 2i + 1, 
+and the right child is located at index 2i + 2. Similarly, 
+the parent of a node at index i is located at index (i - 1) / 2.
